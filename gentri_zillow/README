@@ -1,0 +1,3 @@
+ZillowPy is a thin Python wrapper around the Zillow API.
+
+See zillow_api_test.py for sample usage.
