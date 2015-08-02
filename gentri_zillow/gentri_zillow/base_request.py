@@ -1,10 +1,8 @@
 #/usr/bin/python
-
-
 import urllib
 import urllib2
 
-from zillowpy import zillow_response
+from gentri_zillow import zillow_response
 
 
 class BaseRequest(object):

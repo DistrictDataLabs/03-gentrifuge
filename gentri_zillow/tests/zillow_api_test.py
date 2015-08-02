@@ -1,7 +1,6 @@
 #/usr/bin/python
-
 import unittest
-from zillowpy import zillow_api
+from gentri_zillow import zillow_api
 
 class ZillowApiTest(unittest.TestCase):
   def setUp(self):

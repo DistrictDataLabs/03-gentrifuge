@@ -1,8 +1,6 @@
 #/usr/bin/python
-
-
-from zillowpy import base_request
-from zillowpy import zillow_interface
+from gentri_zillow import base_request
+from gentri_zillow import zillow_interface
 import new
 
 

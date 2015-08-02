@@ -1,8 +1,6 @@
 #/usr/bin/python
-
-
 import unittest
-from zillowpy import zillow_response
+from gentri_zillow import zillow_response
 
 class ZillowResponseTest(unittest.TestCase):
   def testResponseParsing(self):
