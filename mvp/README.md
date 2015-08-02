@@ -1,9 +1,9 @@
-##To Run on Local Client
+##To Run on Local Client from Command Line
 
-Clone the Repo: https://github.com/DistrictDataLabs/03-gentrifuge.git
+1. Clone the Repo: https://github.com/DistrictDataLabs/03-gentrifuge.git
 
-cd mvp
+2. cd mvp
 
-Run the following in your command line: python app.py
+3. Run the following in your command line: python app.py
 
-Open Browser to localhost 0.0.0.0, port 8080
+4. Open Browser to localhost 0.0.0.0, port 8080
