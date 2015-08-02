@@ -51,7 +51,7 @@ Segment - Divide and segment publically available housing data and Yelp API into
 
 Location - Break down all data in DC by Ward, Zip code and/or neighboorhood
 
-Machine Learning Applications - Utilize both Naive Bayes Bag of words 
+Machine Learning Applications - Amalgamate Naive Bayes bag of words model, cluster analysis (k-means etc.) and Gradient Boosting Classifier
 
 
 **Output**
