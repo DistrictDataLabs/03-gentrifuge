@@ -11,7 +11,7 @@ def index():
     def inner():
         zones = glob.glob('data/*.zone')
         for country in zones:
-	    base = os.path.basename(country)
+            base = os.path.basename(country)
             name = base.split('.')[0]
             openme = open(country, 'r')
             lines = openme.read().splitlines()
