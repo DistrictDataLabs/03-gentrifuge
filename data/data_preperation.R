@@ -31,10 +31,11 @@ gent.data$PERC_MHV_2009 <- perc.rank(gent.data$PROP_MHV_2009)
 gent.data$PERC_MHV_INCREASE <- perc.rank((gent.data$PROP_MHV_2013 - gent.data$PROP_MHV_2009)/gent.data$PROP_MHV_2009)
 gent.data$PERC_BA_2013 <- perc.rank(gent.data$PROP_BA_2013)
 
-gent.data <- ddply(gent.data, .(X), function(df){
-  df$eligable <- ifelse(df$PERC_MHI_2009 <= .40 & df$PERC_MHU_2009 <= .40, 1, 0)
-  df$gentrified <- ifelse(df$PERC_MHV_INCREASE >= .66 & df$PERC_BA_2013 >= .66, 1, 0)
+gent.data <- ddply(gent.data, .inform = T,.(X), function(df){
+  df$eligable <- ifelse(df$PERC_MHI_2009 <= .40 & df$PERC_MHV_2009 <= .40, 1, 0)
+  df$gentrified <- ifelse(df$PERC_MHV_INCREASE >= .66 & df$PERC_BA_2013 >= .66 & df$eligable == 1, 1, 0)
   return(df)
 })
+
 
 write.csv(gent.data, "gentrification_indicator.csv")
